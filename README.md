@@ -10,9 +10,9 @@
 
 ## 📁 Dossier
 ----------------------------
-- Html : body.html
-- JavaScript : script.js
-- Css : style.css
+- body.html
+- script.js
+- style.css
 ----------------------------
 
 
