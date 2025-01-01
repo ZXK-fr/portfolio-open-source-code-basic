@@ -1,6 +1,6 @@
 # ZXK - Portfolio
 
-## 🛠 Compétences
+# 🛠 Compétences
 - **Langages** : python, (j'apprend css et js.)
 
 ## 📧 Contact
