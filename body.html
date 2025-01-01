@@ -14,6 +14,7 @@
             <li><a href="#about" onclick="showSection('about')">à propos</a></li>
             <li><a href="#contact" onclick="showSection('contact')">contact</a></li>
             <li><a href="#credits" onclick="showSection('credits')">crédits</a></li>
+            <li><a href="#download" onclick="showSection('download')">download</a></li>
         </ul>
     </nav>
 
@@ -30,12 +31,14 @@
             <p>je suis zxk, un passionné de programmation en python qui apprend css et js </p>
         </div>
     </section>
+
     <section id="contact">
         <div>
             <h1>contact</h1>
             <p>mon discord : zxk_dc</p>
         </div>
     </section>
+
     <section id="credits">
         <div>
             <h1>crédits</h1>
@@ -47,6 +50,15 @@
             </div>
         </div>
     </section>
+
+    <section id="download">
+        <div>
+            <h1>download</h1>
+            <p>ici vous pourrez télécharger mes projets à venir restez connectés !</p>
+            <button class="btn" disabled>coming soon</button>
+        </div>
+    </section>
+    
 
     <div id="particles-js"></div>
 
@@ -72,8 +84,16 @@
         });
 
         function showSection(id) {
-            document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'))
-            document.getElementById(id).classList.add('active')
+            const sections = document.querySelectorAll('section')
+            sections.forEach(sec => {
+                sec.classList.remove('active')
+                sec.style.opacity = '0'
+            })
+            const activeSection = document.getElementById(id)
+            activeSection.classList.add('active')
+            setTimeout(() => {
+                activeSection.style.opacity = '1'
+            }, 100)
         }
     </script>
 </body>
