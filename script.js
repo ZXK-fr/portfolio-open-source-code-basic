@@ -20,9 +20,18 @@ navLinks.forEach(link => {
 });
 
 function showSection(id) {
-    document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => {
+        sec.classList.remove('active');
+        sec.style.opacity = '0';
+    });
+    const activeSection = document.getElementById(id);
+    activeSection.classList.add('active');
+    setTimeout(() => {
+        activeSection.style.opacity = '1';
+    }, 100);
 }
+
 
 window.addEventListener("scroll", () => {
     const textElements = document.querySelectorAll('.animated-text');
@@ -58,7 +67,6 @@ document.addEventListener('mousemove', (e) => {
     }, 500);
 });
 
-// Style de particules
 const style = document.createElement('style');
 style.innerHTML = `
     .particles {
