@@ -9,6 +9,12 @@
 - **Email**    : zxkontop@yahoo.com
 
 ## 📁 Dossier
+extraire le dossier une fois le dossier extrais
+faut extraire le dossier assets une fois finis 
+vous avez juste a lancer le fichier html.
+Si vous voulez modifier le portfolio pour vous
+allez dans le fichier html c'est la ou ya la plupart
+des textes !
 ----------------------------
 - body.html
 - script.js
