@@ -55,10 +55,10 @@
         <div>
             <h1>download</h1>
             <p>ici vous pourrez télécharger mes projets à venir restez connectés !</p>
-            <button class="btn" disabled>coming soon</button>
+            <button class="btn" onclick="window.open('assets/portfolio zxk.zip', '_blank')">open source code</button>
+            <button class="btn github-btn" onclick="window.open('https://github.com/ZXK-fr/portfolio-open-source-code-basic')">github</button>
         </div>
     </section>
-    
 
     <div id="particles-js"></div>
 
@@ -78,22 +78,16 @@
                 detect_on: "canvas", events: {
                     onhover: {enable: true, mode: "repulse"},
                     onclick: {enable: true, mode: "push"}
-                }
+                },
+                modes: {repulse: {distance: 100, duration: 0.4}, push: {particles_nb: 4}}
             },
             retina_detect: true
         });
 
-        function showSection(id) {
-            const sections = document.querySelectorAll('section')
-            sections.forEach(sec => {
-                sec.classList.remove('active')
-                sec.style.opacity = '0'
-            })
-            const activeSection = document.getElementById(id)
-            activeSection.classList.add('active')
-            setTimeout(() => {
-                activeSection.style.opacity = '1'
-            }, 100)
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
         }
     </script>
 </body>
