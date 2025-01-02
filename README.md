@@ -19,6 +19,7 @@ c'est la ou ya la plupart des textes !
 - body.html
 - script.js
 - style.css
+- assets.zip (a extraire)
 ----------------------------
 
 ![portfolio](https://github.com/user-attachments/assets/46c6a98c-c641-4c04-ac5f-ae674b21ce9a)
